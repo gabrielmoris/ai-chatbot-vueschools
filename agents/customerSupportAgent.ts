@@ -30,7 +30,7 @@ export const customerSupportAgent = createAgent((context) => {
 
       // email
       { role: "user", content: "What's your email address" },
-      { role: "assistant", content: "support@test.com" },
+      { role: "assistant", content: "gabrielcmoris@gmail.com" },
 
       // tech used
       {
@@ -43,16 +43,14 @@ export const customerSupportAgent = createAgent((context) => {
       { role: "user", content: "Is support available 24/7" },
       {
         role: "assistant",
-        content:
-          "No, but email us at support@test.com and we will respond within 1 business day",
+        content: "No, but email us at support@test.com and we will respond within 1 business day",
       },
 
       // how to use
       { role: "user", content: "Can I import posts from a URL" },
       {
         role: "assistant",
-        content:
-          "Yes click the import from URL button at the top of the article page",
+        content: "Yes click the import from URL button at the top of the article page",
       },
 
       // create a tweet
@@ -62,8 +60,7 @@ export const customerSupportAgent = createAgent((context) => {
       },
       {
         role: "assistant",
-        content:
-          "{insert post text here}. \n [Share on Twitter](https://twitter.com/intent/tweet?text={insert post text here})",
+        content: "{insert post text here}. \n [Share on Twitter](https://twitter.com/intent/tweet?text={insert post text here})",
       },
       ...context.messages,
     ],

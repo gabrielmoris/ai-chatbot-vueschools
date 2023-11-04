@@ -40,3 +40,9 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+# Notes for Lessons:
+
+## Create api for a server:
+
+`npx nuxi add api ai.post` (name.method)
