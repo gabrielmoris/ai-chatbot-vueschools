@@ -4,7 +4,7 @@ export async function fetchWithTimeout<T>(url: string, fetchOptions: NitroFetchO
   const id = setTimeout(() => {
     controller.abort();
     throw new Error("Requet timed out");
-  }, 100_000);
+  }, 15_000);
   const res = await $fetch<T>(url, {
     ...fetchOptions,
     signal: controller.signal,

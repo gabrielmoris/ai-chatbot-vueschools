@@ -12,6 +12,7 @@ defineExpose({
 });
 
 const postURL = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(announcement.value || "")}`);
+
 </script>
 <template>
   <CardGeneric title="Twitter" :state="state" :body="announcement" class="mb-10">

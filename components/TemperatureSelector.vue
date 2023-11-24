@@ -9,12 +9,7 @@ defineEmits<{
 <template>
   <input
     :value="modelValue"
-    @input="
-      $emit(
-        'update:modelValue',
-        Number(($event.target as HTMLInputElement).value)
-      )
-    "
+    @input="$emit('update:modelValue', Number(($event.target as HTMLInputElement).value))"
     max="1"
     min="0"
     step=".1"
@@ -22,8 +17,6 @@ defineEmits<{
     class="w-full range range-secondary"
   />
   Temperature: {{ modelValue }}
-  <span class="font-bold" v-if="modelValue >= 0.5">
-    - More random, creative, and risky</span
-  >
+  <span class="font-bold" v-if="modelValue >= 0.5"> - More random, creative, and risky</span>
   <span class="font-bold" v-else> - More focused, deterministic, and safe</span>
 </template>

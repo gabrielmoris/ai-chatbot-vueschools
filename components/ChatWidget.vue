@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Message, User } from "~~/types";
+/* __placeholder__ */
+import type { Message, User } from "~~/types";
 
 const me = ref<User>({
   id: "user",
